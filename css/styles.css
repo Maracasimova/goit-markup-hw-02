@@ -1,0 +1,91 @@
+/* цвет основного текста: #212121 */
+/* вторичный цвет текста: #757575 */
+/* цвет фона: #F5F5F5 */
+/* цвет шапки: #ECECEC */
+/* цвет акцент: #2196F3 */
+
+.page {
+  background-color: #f5f5f5;
+  color: #212121;
+}
+
+/*  Logo  */
+
+.logo1 {
+  color: #2196f3;
+}
+
+.logo2 {
+  color: #000000;
+}
+
+.list {
+  list-style: none;
+}
+
+
+.menu .link {
+  color: #212121;
+}
+
+.portfolio {
+  color: #2196f3;
+}
+
+.portfolio:hover,
+.portfolio:focus {
+  color: #212121;
+}
+
+.email-header {
+  color: #2196f3;
+}
+
+.tel-header {
+  color: #757575;
+}
+
+/* Main */
+
+.sort .button1 {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.sort .button2 {
+  color: #212121;
+  background-color: #f5f4fa;
+}
+
+
+.section-title {
+  color: #212121;
+}
+
+.section-type {
+  color: #757575;
+}
+
+.footer {
+  background: #2f303a;
+}
+
+.logo3 {
+  color: #2196f3;
+}
+
+.logo4 {
+  color: #ffffff;
+}
+
+.address {
+    color:#ffffff;
+}
+
+.email-footer {
+  color: #ffffff;
+}
+
+.tel-footer {
+  color: #ffffff;
+}
