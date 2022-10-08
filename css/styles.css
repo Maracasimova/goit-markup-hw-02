@@ -4,88 +4,177 @@
 /* цвет шапки: #ECECEC */
 /* цвет акцент: #2196F3 */
 
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --background-color: #f5f5f5;
+  --white-color: #ffffff;
+  --background-button-color: #f5f4fa;
+  --background-footer-color: #2f303a;
+  --black-color: #000000;
+}
+
 .page {
-  background-color: #f5f5f5;
-  color: #212121;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 /*  Logo  */
 
-.logo1 {
-  color: #2196f3;
+.logo-blue,
+.logo-black,
+.logo-white {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 
-.logo2 {
-  color: #000000;
+.logo-black {
+  color: var(--black-color);
+}
+
+.logo-white {
+  color: var(--white-color);
+}
+
+.a-decorat {
+  text-decoration: none;
 }
 
 .list {
   list-style: none;
 }
 
+/* Site-nav */
 
-.menu .link {
-  color: #212121;
+.site-nav a {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-.portfolio {
-  color: #2196f3;
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
 }
 
-.portfolio:hover,
-.portfolio:focus {
-  color: #212121;
+.site-nav a.current {
+  color: var(--accent-color);
 }
 
-.email-header {
-  color: #2196f3;
+/* Auth-nav */
+
+.auth-nav a {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-.tel-header {
-  color: #757575;
+.auth-nav a:hover,
+.auth-nav a:focus {
+  color: var(--accent-color);
 }
-
 /* Main */
+/* Hero */
 
-.sort .button1 {
-  color: #ffffff;
-  background-color: #2196f3;
+.hero {
+  background-color: #2f303a;
 }
 
-.sort .button2 {
-  color: #212121;
-  background-color: #f5f4fa;
+.hero-title {
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
+.hero-button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/* Section */
 
 .section-title {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .section-type {
-  color: #757575;
+  color: var(--title-text-color);
+}
+
+/* Features */
+
+.features-list .description {
+  color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+}
+
+/* Team */
+.person {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19px;
+}
+
+.team-list .description {
+  color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19px;
+}
+
+/* Button */
+
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--background-button-color);
+}
+
+.button:hover {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.button.secondary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 .footer {
-  background: #2f303a;
-}
-
-.logo3 {
-  color: #2196f3;
-}
-
-.logo4 {
-  color: #ffffff;
+  background: var(--background-footer-color);
 }
 
 .address {
-    color:#ffffff;
+  color: var(--white-color);
 }
 
 .email-footer {
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .tel-footer {
-  color: #ffffff;
+  color: var(--white-color);
 }
