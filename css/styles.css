@@ -15,7 +15,8 @@
   --black-color: #000000;
   --footer-white-color: rgba(255, 255, 255, 0.6);
   --background-color: #ffffff;
-  --header-background-color: #ECECEC;
+  --header-background-color: #ececec;
+  --background-button-color-sec: #188ce8;
 }
 
 .page {
@@ -25,10 +26,6 @@
   font-family: Roboto, sans-serif;
   font-weight: 700;
   letter-spacing: 0.03em;
-}
-
-.header {
-  background-color: var(--header-background-color);
 }
 
 /*  Logo  */
@@ -142,10 +139,6 @@
 
 /* Features */
 
-.features {
-  background-color: var(--main-color);
-}
-
 .features-title {
   font-weight: 700;
   font-size: 14px;
@@ -155,26 +148,22 @@
 
 .features-list .description {
   color: var(--title-text-color);
-  
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 
-.occupation {
-  background-color: var(--main-color);
-}
-
 /* Team */
-.team {
-  background-color: var(--main-color);
-}
 
 .person {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+}
+
+.team-list {
+  background-color: var(--white-color);
 }
 
 .team-list .description {
@@ -185,16 +174,14 @@
   line-height: 1.19;
 }
 
-.page2 {
-  background-color: var(--main-color);
-}
-
 /* Button */
 
 .button {
   color: var(--primary-text-color);
   background-color: var(--background-button-color);
 
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -215,6 +202,12 @@
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--white-color);
+  background-color: var(--background-button-color-sec);
 }
 
 .footer {
@@ -245,7 +238,6 @@
 }
 
 .list-title {
- 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
